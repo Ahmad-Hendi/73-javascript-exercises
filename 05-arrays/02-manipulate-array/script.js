@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "pomme",
         "poire",
         "fraise",
@@ -25,5 +25,14 @@
     ];
 
     // your code here
+    fruits.slice(1, -1);
+    fruits.splice(0, 1, "banana");
+    fruits.push("kiwi");
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(fruits);
+    })
+    
+    
+    
 
 })();

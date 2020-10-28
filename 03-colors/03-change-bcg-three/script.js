@@ -9,8 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+let arrColor = ["red", "blue", "pink", "yellow", "brown", "orange"];
+let btn = document.getElementById("run");
+btn.addEventListener ("click", () => {
+    let randomColor = arrColor[Math.floor(Math.random() * arrColor.length)];
+    document.bgColor = randomColor;
+});
+//     // your code here
 
-    // your code here
+// })();
 
-})();
+    
+
+
+

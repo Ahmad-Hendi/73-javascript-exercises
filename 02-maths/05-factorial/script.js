@@ -8,13 +8,19 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
+let f;
+let number;
 (function() {
     
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
-
+        number=document.getElementById("number").value;
+        f=1;
+        for(let i=1;i<=number;i++){
+            f=f*i;
+        }
+        alert(f);
         // your code here
 
     });
