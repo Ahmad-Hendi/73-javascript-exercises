@@ -27,5 +27,10 @@
     ];
 
     // your code here
+    let hasApple = fruits.includes("apple");
+
+    document.getElementById("run").addEventListener("click", ()=> {
+        console.log(hasApple);
+    })
 
 })();

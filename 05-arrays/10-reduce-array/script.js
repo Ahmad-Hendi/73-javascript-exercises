@@ -90,5 +90,11 @@
     ];
 
     // your code here
-
+    sum 
+    let sumAges = people.reduce(sum, elem =>  sum + elem.age);
+    console.log(sumAges);
+    
+    
+        
+    
 })();

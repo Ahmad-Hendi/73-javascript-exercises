@@ -10,7 +10,26 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+// your code here
+document.getElementById("run").addEventListener("click", () => {
+    let passOne = document.getElementById("pass-one").value;
+    let passTwo = document.getElementById("pass-two").value;
+    if (passOne === passTwo){
+        document.getElementById("pass-one").setAttribute("style", "");
+        document.getElementById("pass-two").setAttribute("style", "");
+    }else{
+        document.getElementById("pass-one").setAttribute("style", "border: 1px solid red");
+        document.getElementById("pass-two").setAttribute("style", "border: 1px solid red");
+        
+    }
+})
 })();
+
+            
+    
+    
+
+
+
+
+

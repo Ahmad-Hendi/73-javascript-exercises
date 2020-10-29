@@ -90,5 +90,13 @@
     ];
 
     // your code here
+    console.log(people); // just to compare 
+
+    let filter = people.filter(clean => clean.age > 18);
+    
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(filter);
+    })
+
 
 })();

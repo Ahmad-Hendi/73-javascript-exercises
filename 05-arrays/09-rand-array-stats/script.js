@@ -10,7 +10,20 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", () => {
+        let arr = [];
+        for (let i = 0; i <= 10; i++){
+            arr.push(Math.floor(Math.random() * 100 + 1));
+            
+        }
+        for (let j = 1; j < 11; j++){
+            document.getElementById("n-" + j).innerHTML = arr[j -1];
+        }
+        document.getElementById("min").innerHTML = Math.min(...arr);
+        document.getElementById("max").innerHTML = Math.max(...arr);
+    })
 
+    
     // your code here
 
 })();
